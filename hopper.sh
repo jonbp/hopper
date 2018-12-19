@@ -299,7 +299,9 @@ for pageid in $(wp post list --order="ASC" --orderby="date" --post_type=page --p
 done
 
 # Language Updates
-wp core language update
+wp language core update
+wp language plugin update --all 
+wp language theme update --all
 
 # ——————
 # HOUSEKEEPING END
